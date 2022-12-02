@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Main page</title>
+   <link rel="stylesheet" href="ngn/css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- nav  and  logo   -->
+   <nav class="nav">
+      <div class="nav-wrap-main">
+         <div class="nav-main">
+            <div class="nav-right">
+               <div class="logo">
+                  <a href="index.html">
+                     <img src="ngn/img/logo.png" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="nav-left">
+               <div class="burger-icon hover-target">
+                  <span class="burger-icon__line burger-icon__line-left"></span>
+                  <span class="burger-icon__line"></span>
+                  <span class="burger-icon__line burger-icon__line-right"></span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="nav-group">
+         <ul class="nav-item">
+            <li>
+               <a href="index.html" class="nav-link ">Главная</a>
+            </li>
+            <li>
+               <a href="about-us.html" class="nav-link">о нас</a>
+            </li>
+            <li>
+               <a href="tours.html" class="nav-link">все туры</a>
+            </li>
+            <li>
+               <a href="transport.html" class="nav-link">транспорт</a>
+            </li>
+            <li>
+               <a href="contacts.html" class="nav-link">контакты</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+   <!--   section  header  -->
+   <header class="header">
+      <div class="slideshow-body">
+         <div class="slideshow-container">
+            <div class="slideshow-wrapper">
+               <div class="slideshow-img-container">
+                  <div class="tashkent">
+                     <div class="slideshow-info">
+                        <h1 class="slideshow-title">ТАШКЕНТ</h1>
+                        <a class="js-open-modal slider-btn" data-modal="10" href>Забронировать</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slideshow-img-container">
+                  <div class="kapadokiya">
+                     <div class="slideshow-info">
+                        <h1 class="slideshow-title">КАПАДОКИЯ</h1>
+                        <a class="js-open-modal slider-btn" data-modal="10" href>Забронировать</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="slideshow-img-container">
+                  <div class="almata">
+                     <div class="slideshow-info">
+                        <h1 class="slideshow-title">АЛМА-АТА</h1>
+                        <a class="js-open-modal slider-btn" data-modal="10" href>Забронировать</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- <div class="slide-wrapper">
+         <div class="slide kapadokiya">
+            <div class="slide-info">
+               <h1 class="slider-title">КАПАДОКИЯ</h1>
+               <a class="js-open-modal slider-btn" data-modal="10" href>Забронировать</a>
+            </div>
+         </div>
+         <div class="slide tashkent">
+            <div class="slide-info">
+               <h1 class="slider-title">ТАШКЕНТ</h1>
+               <a class="js-open-modal slider-btn" data-modal="10" href>Забронировать</a>
+            </div>
+         </div>
+         <div class="slide almata">
+            <div class="slide-info">
+               <h1 class="slider-title">АЛМА-АТА</h1>
+               <a class="js-open-modal slider-btn" data-modal="10" href>Забронировать</a>
+            </div>
+         </div>
+
+        
+         <div class="btn-wrapper">
+            <span class="controls" onclick="prevSlide(-1)" id="left-arrow">
+               <img src="assets/img/icon/left.svg" alt="">
+            </span>
+            <span class="controls" id="right-arrow" onclick="nextSlide(1)">
+               <img src="assets/img/icon/right.svg" alt="">
+            </span>
+         </div>
+         <div id="dots-con">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+         </div>
+      </div> -->
+      <div class="modal" data-modal="10">
+         <div class="modal-wrapper__contact">
+            <h2 class="modal-wrapper__title">Для подробной информации, напишите нам на месседжер</h2>
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+               <path
+                  d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z">
+               </path>
+            </svg>
+            <div class="modal-wrapper__items">
+               <a href="https://api.whatsapp.com/send?phone=996501112222&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..."
+                  class="call-item">
+                  <img class="modal-wrapper__img" src="ngn/img/icon/whatsup.svg" alt="">
+                  <span>WhatsApp</span>
+               </a>
+               <a href="https://www.instagram.com/accounts/login/?next=/amanatfly/" class="call-item">
+                  <img class="modal-wrapper__img" src="ngn/img/icon/insta-white.svg" alt="">
+                  <span>Instagram</span>
+               </a>
+               <a href="https://www.facebook.com/profile.php?id=100081502863904" class="call-item">
+                  <img class="modal-wrapper__img" src="ngn/img/icon/facebook.svg" alt="">
+                  <span>Facebook</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="overlay js-overlay-modal"></div>
+   </header>
+
+
+   <!--   section  main   -->
+
+   <main>
+      <div class="main-content">
+         <div class="container">
+            <h1 class="about-company__title">Наши преимущества</h1>
+            <ul class="main-content__info">
+               <li class="main-content__desc">
+                  <img class="icons" src="ngn/img/icon/quality.png" alt="">
+                  <p>
+                     Высокий уровень сервиса<br>
+                     Лучшее соответствие цены и качества туров
+                  </p>
+               </li>
+               <li class="main-content__desc">
+                  <img class="icons" src="ngn/img/icon/plans.svg" alt="">
+                  <p>
+                     Бесплатная консультация<br>
+                     Бесплатное бронирование<br>
+                     Гарантия конфиденциальности
+                  </p>
+               </li>
+               <li class="main-content__desc">
+                  <img class="icons" src="ngn/img/icon/pay.png" alt="">
+                  <p>
+                     Удобные платежные системы<br>
+                     Онлайн и оффлайн покупка авиабилетов
+                  </p>
+               </li>
+               <li class="main-content__desc">
+                  <img class="icons" src="ngn/img/icon/medical.png" alt="">
+                  <p>
+                     Медицинское страхование
+                  </p>
+               </li>
+            </ul>
+            <div class="about-company">
+               <h1 class="about-company__title">Популярные направления</h1>
+               <ul class="about-company__wrapper">
+                  <li class="about-company__item">
+                     <img src="ngn/img/alamata-card-1.jpg" alt="#">
+                     <h3>
+                        Однодневный тур в Алматы
+                     </h3>
+                     <p>
+                        Маршрут тура: Бишкек - Алматы - Бишкек
+                     </p>
+                     <span></span>
+                     <p>
+                        В стоимость турпакета входит: <br>
+                        - Транспорт Бишкек-Алматы-Бишкек; <br>
+                        - Транспорт на протяжении всего тура; <br>
+                        - Посещение всех локаций; <br>
+                        - Подъем и спуск на панораму Кок-Тобе; <br>
+                        - Входной билет в зоопарк; <br>
+                        - Сопровождающий турлидер ; <br>
+                        - Бонусы компании
+                     </p>
+                     <div>
+                        <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                     </div>
+                  </li>
+                  <li class="about-company__item">
+                     <img src="ngn/img/efes-card.jpg" alt="#">
+                     <h3>
+                        Наследие Турции «Великолепный Век»
+                     </h3>
+                     <p>
+                        Маршрут тура: Стамбул – Чанаккале – Троя – Эфэс – Кушадасы – Денизли – Памуккале – Анталья.
+                     </p>
+                     <span></span>
+                     <p>
+                        В стоимость турпакета входит: <br>
+                        - Авиаперелёты; <br>
+                        - Проживание в отелях 4* и 5*; <br>
+                        - Питание на базе завтрака <br>
+                        - Сопровождение гида; <br>
+                        - Переезды по программе; <br>
+                        - Медицинская страховка ;
+
+                     </p>
+                     <div>
+                        <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                     </div>
+                  </li>
+                  <li class="about-company__item">
+                     <img src="ngn/img/tashkent-card.jpeg" alt="#">
+                     <h3>
+                        Тур в солнечный Ташкент
+                     </h3>
+                     <p>
+                        Маршрут тура: Бишкек-Ташкент-Бишкек;
+                     </p>
+                     <span></span>
+                     <p>
+                        В стоимость турпакета входит: <br>
+                        - Транспорт Бишкек-Ташкент-Бишкек; <br>
+                        - Транспорт по Ташкенту 2 дня; <br>
+                        - Сопровождающий турлидер ; <br>
+                        - Профессиональный местный гид в Ташкенте; <br>
+                        - Проживание в отеле; <br>
+                        - Завтрак в отеле; <br>
+                        - Бонусы компании
+                     </p>
+                     <div>
+                        <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                     </div>
+                  </li>
+               </ul>
+
+            </div>
+         </div>
+      </div>
+      <div class="couples-main">
+         <div class="about-company">
+            <h1 class="about-company__title">Популярные направления для пар</h1>
+            <ul class="about-company__wrapper couples">
+               <li class="about-company__item couples-item">
+                  <img src="ngn/img/almata.jpg" alt="#">
+                  <h3>
+                     Двухдневный тур в Алматы
+                  </h3>
+                  <p>
+                     Маршрут тура: Бишкек - Алматы - Бишкек
+                  </p>
+                  <span></span>
+                  <p>
+                     В стоимость турпакета входит: <br>
+                     - Транспорт Бишкек-Алматы-Бишкек; <br>
+                     - Транспорт на протяжении всего тура; <br>
+                     - Посещение всех локаций; <br>
+                     - Проживание в отеле;<br>
+                     - Завтрак в отеле;<br>
+                     - Подъем и спуск на панораму Кок-Тобе; <br>
+                     - Сопровождающий турлидер ; <br>
+                     - Бонусы компании
+                  </p>
+                  <div>
+                     <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                  </div>
+               </li>
+               <li class="about-company__item couples-item">
+                  <img src="ngn/img/stambul-card.jpg" alt="#">
+                  <h3>
+                     Наследие Турции «Стамбул 2н. – Анталия 5н.»
+                  </h3>
+                  <p>
+                     Маршрут тура: Стамбул – Анталья.
+                  </p>
+                  <span></span>
+                  <p>
+                     В стоимость турпакета входит: <br>
+                     - Авиаперелёты; <br>
+                     - Трансфер а/п – отель – а/п;<br>
+                     - Питание в Стамбуле по системе HB; <br>
+                     - Питание в Анталии по системе AI;<br>
+                     - Сопровождение гида; <br>
+                     - Переезды по программе; <br>
+                     - Медицинская страховка ;
+
+                  </p>
+                  <div>
+                     <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="our-tourist">
+         <h1 class="about-company__title">Наши туристы</h1>
+         <div class="gallery-tourist">
+            <div class="img__box blur"><img src="ngn/img/guest.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/guest-2.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/quest-3.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/quest-4.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/quest-5.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/quest-7.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/quest-8.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/quest-9.jpg" alt></div>
+            <div class="img__box blur"><img src="ngn/img/quest-3.jpg" alt></div>
+         </div>
+      </div>
+      <div class="reviews">
+         <h1 class="about-company__title">Наши довольные клиенты</h1>
+         <!--Slider-->
+         <div class="container-slyder">
+            <div id="slider">
+               <div class="main-reviews" style="display: block;">
+                  <div class="slide-content">
+                     <div class="slider-img">
+                        <img src="ngn/img/povar1.jpg" alt="">
+                     </div>
+                     <div class="slide-desc">
+
+                        <blockquote>
+                           “
+                           Спасибо! Отлично съездили в Ташкент, все прошло на высшем уровне
+                           ”
+                        </blockquote>
+                        <p>Салмоорбеков Талгат</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="slider">
+               <div class="main-reviews" style="display: none;">
+                  <div class="slide-content">
+                     <div class="slider-img">
+                        <img src="ngn/img/povar2.jpg" alt="">
+                     </div>
+                     <div class="slide-desc">
+
+                        <blockquote>
+                           “
+                           Спасибо большое за отличный отпуск! Очень понравилось. Отдохнули на все 100%.Будем обращаться
+                           в следующий раз обязательно к Вам.
+                           ”
+                        </blockquote>
+                        <p>Кудайбергенова Асель</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="slider">
+               <div class="main-reviews" style="display: none;">
+                  <div class="slide-content">
+                     <div class="slider-img">
+                        <img src="ngn/img/povar3.jpg" alt="">
+                     </div>
+                     <div class="slide-desc">
+
+                        <blockquote>
+                           “
+                           Ездили с дочкой в Турцию, все понравилось, агентство всегда на связи, менеджер Айзада всегда
+                           подскажет что и как, грамотные консультации, всем остались довольны. Приятная и общительная
+                           девушка. Рекомендую! Успехов и процветания!!! Спасибо!
+                           ”
+                        </blockquote>
+                        <p>Югай Юлия</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="slider">
+               <div class="main-reviews" style="display: none;">
+                  <div class="slide-content">
+                     <div class="slider-img">
+                        <img src="ngn/img/povar3.jpg" alt="">
+                     </div>
+                     <div class="slide-desc">
+
+                        <blockquote>
+                           “
+                           Спасибо менеджеру Айзаде за прекрасно проведенный отпуск в Турции,профессионализм и терпение.
+                           Она учла все наши пожелания. Теперь только к ней
+                           ”
+                        </blockquote>
+                        <p>Марина Щеглова</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="btn-wrapper">
+               <span class="controls" onclick="plus(-1)" id="left-arrow">
+                  <img src="ngn/img/icon/left.svg" alt="#">
+               </span>
+               <span class="controls" id="right-arrow" onclick="plus(-1)">
+                  <img src="ngn/img/icon/right.svg" alt="#">
+               </span>
+            </div>
+            <div id="dots-con">
+               <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span
+                  class="dot"></span>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="about-company">
+            <h1 class="about-company__title">Популярные семейные направления</h1>
+            <ul class="about-company__wrapper">
+               <li class="about-company__item">
+                  <img src="ngn/img/kapadok.jpg" alt="#">
+                  <h3>
+                     Наследие Турции «Стамбул + Каппадокия»
+                  </h3>
+                  <p>
+                     Маршрут тура: Стамбул – Анкара – Каппадокия – Денизли (Памуккале) – Анталья
+                  </p>
+                  <span></span>
+                  <p>
+                     В стоимость турпакета входит: <br>
+                     - Авиаперелёты; <br>
+                     - Проживание в отелях 4* и 5*; <br>
+                     - Питание на базе завтрака <br>
+                     - Сопровождение гида; <br>
+                     - Переезды по программе; <br>
+                     - Медицинская страховка ;
+
+                  </p>
+                  <div>
+                     <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                  </div>
+               </li>
+               <li class="about-company__item">
+                  <img src="ngn/img/samrkand-card.jpg" alt="#">
+                  <h3>
+                     Тур в Узбекистан
+                  </h3>
+                  <p>
+                     Маршрут тура: Ташкент - Самарканд - Бухара
+                  </p>
+                  <span></span>
+                  <p>
+                     В стоимость турпакета входит: <br>
+                     - Транспорт Ташкент - Самарканд - Бухара; <br>
+                     - Транспорт на протяжении всего тура; <br>
+                     - Посещение всех локаций; <br>
+                     - Проживание в отеле;<br>
+                     - Завтрак в отеле;<br>
+                     - Сопровождающий турлидер ; <br>
+                     - Бонусы компании
+                  </p>
+                  <div>
+                     <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                  </div>
+               </li>
+               <li class="about-company__item">
+                  <img src="ngn/img/gruzia-card.jpg" alt="#">
+                  <h3>
+                     Тур в Грузию
+                  </h3>
+                  <p>
+                     Маршрут тура: Бишкек - Грузия - Бишкек
+                  </p>
+                  <span></span>
+                  <p>
+                     В стоимость турпакета входит: <br>
+                     - Авиаперелёты; <br>
+                     - Трансфер а/п – отель – а/п;<br>
+                     - Транспорт Бишкек - Грузия - Бишкек; <br>
+                     - Транспорт на протяжении всего тура; <br>
+                     - Посещение всех локаций; <br>
+                     - Проживание в отеле;<br>
+                     - Завтрак в отеле;<br>
+                     - Сопровождающий турлидер ; <br>
+                     - Бонусы компании
+                  </p>
+                  <div>
+                     <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="couples-main new-dest-wrap">
+         <div class="container">
+            <h1 class="about-company__title">Новые направления</h1>
+            <div class="new-dest__item ">
+               <img class="security-item-save" src="ngn/img/gruziya.jpg" alt="#">
+               <div class="new-dest__info">
+                  <h3 class="new-dest__title">
+                     Грузия
+                  </h3>
+                  <p class="security-item__desc">
+                     Посетите страну с богатейшей культурой и историей
+                  </p>
+                  <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+               </div>
+            </div>
+            <div class="new-dest__item ">
+               <img class="security-item-save" src="ngn/img/bodrum.jpg" alt="#">
+               <div class="new-dest__info">
+                  <h3 class="new-dest__title">
+                     Бодрум (Турция)
+                  </h3>
+                  <p class="security-item__desc">
+                     Посетите туристический город с шикарнейшими пляжами
+                  </p>
+                  <a href="" class="about-company__btn js-open-modal" data-modal="10">Подробнее</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-wrapper">
+            <div class="footer-item">
+               <div class="footer-title">Адрес </div>
+               <a href="#" class="footer-desc">​БЦ Maximum​ <br>
+                  Турусбекова 109/1 <br> 1​5 этаж, 509 кабинет</a>
+            </div>
+            <div class="footer-item">
+               <div class="footer-title">Телефон </div>
+               <a href="tel:996 559112222" class="footer-desc">+996 559‒11‒22‒22</a>
+               <a href="tel:996 501112222" class="footer-desc">+996 501‒11‒22‒22</a>
+               <a href="tel:996 700505509" class="footer-desc">+996 700-505-509</a>
+            </div>
+            <div class="footer-item">
+               <div class="footer-title">Навигация</div>
+               <a href="index.html" class="footer-desc">Главная</a>
+               <a href="about-us.html" class="footer-desc">О нас</a>
+               <a href="tours.html" class="footer-desc">Все туры</a>
+               <a href="transport.html" class="footer-desc">Транспорт</a>
+               <a href="contacts.html" class="footer-desc">Контакты</a>
+            </div>
+            <div class="footer-item">
+               <div class="footer-title">Оставить заявку </div>
+               <form action="" class="footer-form">
+                  <input name="name" type="name" name="name" placeholder="Имя">
+                  <input name="phone" type="tel" name="tel" placeholder="Телефон">
+                  <input name="comment" type="text" name="comment" placeholder="Комментарий">
+                  <button type="submit" class="form-footer">отправить</button>
+               </form>
+               <div class="footer-down-info" style="color: #e4d044;"></div>
+            </div>
+         </div>
+         <div class="footer-down">
+            Все права защищены © Amanat fly company
+         </div>
+         <span style="text-align:center;display:block;color:whitesmoke;font-size:13px;padding-bottom: 10px;">
+            developed by <a href="https://pladzuma.com/" target="_blank"
+               style="color: whitesmoke;font-size:13px">Pladzuma</a>
+         </span>
+      </div>
+   </footer>
+
+
+   <!--   scripts -->
+   <script src="ngn/js/app.js"></script>
+</body>
+
+</html>
